@@ -1,0 +1,83 @@
+{
+  "python": "3.13.15",
+  "numpy": "2.5.3",
+  "torch": "2.14.0+cpu",
+  "linearized_stationary_sd_Y": 0.4797857020383358,
+  "fresh_pool_refinement": [
+    {
+      "dt": 0.04,
+      "max_error": 3.64329859779966e-05
+    },
+    {
+      "dt": 0.02,
+      "max_error": 9.447120358552219e-06
+    },
+    {
+      "dt": 0.01,
+      "max_error": 2.4377363606609137e-06
+    }
+  ],
+  "round_trip": {
+    "cost": {
+      "mean": 0.21098070461677432,
+      "se": 0.000482221673514718
+    },
+    "rhs": {
+      "mean": 0.21098070462073654,
+      "se": 0.0004822216735182709
+    },
+    "max_pathwise_identity_error": 7.0041750177551876e-12
+  },
+  "pinn_smoke": {
+    "Q": 1,
+    "T": 1,
+    "estimate": 0.9012464421875102,
+    "initial_quadrature_se": 0.00021982403324484,
+    "independent_mc": 0.9024961691837183,
+    "mc_se": 0.00032120264396896125,
+    "fits": [
+      {
+        "case": "order",
+        "training_seconds": 21.42811192499994,
+        "last_validation": {
+          "start": 0.0,
+          "end": 1.0,
+          "stage": "lbfgs",
+          "validation_physical_rmse": [
+            0.006442903998283164
+          ]
+        }
+      },
+      {
+        "case": "control",
+        "training_seconds": 22.318454782000117,
+        "last_validation": {
+          "start": 0.0,
+          "end": 1.0,
+          "stage": "lbfgs",
+          "validation_physical_rmse": [
+            0.0056256825504612026
+          ]
+        }
+      }
+    ],
+    "status": "smoke comparison only; not a convergence certificate"
+  },
+  "stochastic_timestep_check": [
+    {
+      "dt": 0.04,
+      "mean": 0.9024202988315229,
+      "se": 0.0001580364348831904
+    },
+    {
+      "dt": 0.02,
+      "mean": 0.9024996645228782,
+      "se": 0.00015878967845128503
+    },
+    {
+      "dt": 0.01,
+      "mean": 0.9025387075684286,
+      "se": 0.00015828312308884283
+    }
+  ]
+}
